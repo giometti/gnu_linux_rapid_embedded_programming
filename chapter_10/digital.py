@@ -44,7 +44,6 @@ def do_write(data):
 	p1	= p1 >> 1
 	np0	= not p0
 	tmp = (p2 << 3) | (p1 << 2) | (p0 << 1) | np0
-	tmp = 0x01
 	dbg("p2.p1.p0.np0=0x%01x" % (tmp))
 
 	# Do the write
